@@ -1,0 +1,47 @@
+{
+  "name": "react-app",
+  "version": "0.1.0",
+  "main": "./out/lib",
+  "scripts": {
+    "build:ts": "tsc -b .",
+    "build:ts:watch": "tsc -b --watch --preserveWatchOutput .",
+    "build:bundle": "webpack",
+    "build:bundle:watch": "webpack --watch",
+    "build": "$npm_execpath run build:ts && $npm_execpath run build:bundle",
+    "build:watch": "concurrently -k yarn:build:ts:watch yarn:build:bundle:watch",
+    "clean": "tsc -b --clean .",
+    "postclean": "rm -rf ./out"
+  },
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-is": "^17.0.1",
+    "react-router": "^5.2.0",
+    "react-router-dom": "^5.2.0",
+    "tslib": "^2.1.0",
+    "styled-components": "^5.2.1"
+  },
+  "devDependencies": {
+    "@alexghr/ts": "^0.1.0",
+    "@types/node": "^14.14.25",
+    "@types/react": "^17.0.1",
+    "@types/react-dom": "^17.0.0",
+    "@types/react-router": "^5.1.11",
+    "@types/react-router-dom": "^5.1.7",
+    "@types/styled-components": "^5.1.7",
+    "@types/webpack": "^4.41.26",
+    "@babel/core": "^7.12.13",
+    "@babel/plugin-transform-modules-commonjs": "^7.12.13",
+    "@babel/preset-env": "^7.12.13",
+    "@babel/preset-react": "^7.12.13",
+    "@babel/preset-typescript": "^7.12.13",
+    "babel-loader": "^8.2.2",
+    "babel-plugin-styled-components": "^1.12.0",
+    "concurrently": "^5.3.0",
+    "css-loader": "^5.1.3",
+    "style-loader": "^2.0.0",
+    "typescript": "^4.1.3",
+    "webpack": "^5.21.1",
+    "webpack-cli": "^4.5.0"
+  }
+}

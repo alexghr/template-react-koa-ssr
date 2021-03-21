@@ -1,0 +1,11 @@
+{
+  "extends": "@alexghr/ts",
+  "compilerOptions": {
+    "composite": true
+  },
+  "references": [
+    {
+      "path": "../ui"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "extends": "@alexghr/ts",
+  "compilerOptions": {
+    "jsx": "react",
+    "noEmit": true,
+    "types": []
+  },
+  "include": ["*"],
+  "references": [
+    {
+      "path": "../app"
+    }
+  ]
+}

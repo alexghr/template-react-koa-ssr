@@ -1,0 +1,14 @@
+{
+  "exclude": ["*"],
+  "references": [
+    {
+      "path": "./src/lib"
+    },
+    {
+      "path": "./src/bin"
+    },
+    {
+      "path": "../ui"
+    }
+  ]
+}

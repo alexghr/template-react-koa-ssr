@@ -1,0 +1,26 @@
+{
+  "name": "ws",
+  "private": "true",
+  "workspaces": [
+    "packages/*"
+  ],
+  "version": "0.1.0",
+  "repository": "https://github.com/alexghr/template-react-koa-ssr.git",
+  "author": "Alex Gherghisan <alexghr@users.noreply.github.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "lerna run build",
+    "clean": "lerna run clean",
+    "build:watch": "lerna run build:watch --parallel",
+    "start": "node packages/server",
+    "start:watch": "nodemon -r dotenv/config packages/server",
+    "dev": "$npm_execpath run build; concurrently -k yarn:build:watch yarn:start:watch"
+  },
+  "devDependencies": {
+    "concurrently": "^6.0.0",
+    "dotenv": "^8.2.0",
+    "lerna": "^4.0.0",
+    "nodemon": "^2.0.7",
+    "prettier": "^2.2.1"
+  }
+}

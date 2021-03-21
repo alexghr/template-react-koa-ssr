@@ -1,0 +1,11 @@
+{
+  "exclude": ["*"],
+  "references": [
+    {
+      "path": "./src/lib"
+    },
+    {
+      "path": "./src/app"
+    }
+  ]
+}
